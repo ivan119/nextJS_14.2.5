@@ -16,18 +16,22 @@
   }
 }
 
+html {
+  @apply  flex justify-center
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* experimental */
+  @apply w-full max-w-7xl border border-gray-500 text-gray-900 dark:text-yellow-400;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.globalWelcome {
+  @apply text-4xl items-center justify-center flex flex-col;
+  height: calc(100vh - 52px);
 }
