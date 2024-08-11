@@ -21,7 +21,7 @@ export default function Page() {
       <motion.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 0.5 }}
         className="flex flex-row items-center space-x-4"
       >
         <Link href="/" className="text-2xl">
@@ -31,6 +31,7 @@ export default function Page() {
           className="h-8 w-8"
           network="github"
           bgColor="transparent"
+          target="_blank"
           fgColor={iconColor}
           url="https://github.com/ivan119"
         />

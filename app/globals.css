@@ -16,13 +16,13 @@
   }
 }
 
-html {
-  @apply  flex justify-center
-}
-
 body {
   /* experimental */
-  @apply w-full max-w-7xl border border-gray-500 text-gray-900 dark:text-yellow-400;
+  @apply transition-all ease-linear duration-1000 w-full max-w-7xl border border-gray-500 text-gray-900 dark:text-yellow-400 mx-auto;
+}
+
+.header {
+  @apply sticky top-0 flex justify-between items-center h-12 p-2;
 }
 
 @layer utilities {
