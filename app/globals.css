@@ -18,13 +18,16 @@
 
 body {
   /* experimental */
-  @apply transition-all ease-linear duration-1000 w-full max-w-7xl border border-gray-500 text-gray-900 dark:text-yellow-400 mx-auto;
+  @apply transition-all ease-linear duration-1000 w-full max-w-7xl border border-gray-500 text-gray-900 dark:text-yellow-400 mx-auto z-0;
 }
 
 .header {
   @apply sticky top-0 flex justify-between items-center h-12 p-2;
 }
-
+.hero {
+  @apply h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden;
+  height: calc(100vh - 52px);
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -34,4 +37,9 @@ body {
 .globalWelcome {
   @apply text-4xl items-center justify-center flex flex-col;
   height: calc(100vh - 52px);
+}
+
+.btn {
+  @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all
+    hover:border-[#F7abba] duration-1000 hover:cursor-pointer hover:text-gray-900 hover:dark:text-yellow-300;
 }

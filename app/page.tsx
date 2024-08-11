@@ -1,16 +1,9 @@
 import Link from "next/link";
-
+import Hero from "./components/UI/Hero";
 export default function Home() {
   return (
     <main>
-      <div>
-        <Link
-          href="/pageTwo"
-          className="globalWelcome text-2xl text-yellow-500"
-        >
-          Welcome
-        </Link>
-      </div>
+      <Hero />
     </main>
   );
 }
